@@ -76,7 +76,7 @@ def download(URL, fname):
 # BEGIN EXECUTION #
 ###################
 local_files = get_local_files(TOP_DIR)
-for jdate in get_links(TOP_URL, [re.compile('2022.*$')]):
+for jdate in get_links(TOP_URL, [re.compile('2023.*$')]):
   for jfile in get_links(TOP_URL + jdate, [re.compile('.*\.json$')]):
     jpath = jdate + jfile
     if jpath in local_files:
